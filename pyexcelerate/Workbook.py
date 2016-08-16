@@ -78,5 +78,4 @@ class Workbook(object):
 		self._writer.save(file_handle)
 
 	def save(self, filename):
-		with open(filename, 'wb') as fp:
-			self._save(fp)
+		self._save(filename)
