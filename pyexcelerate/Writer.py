@@ -60,6 +60,6 @@ class Writer(object):
 			for s in sheetStream:
 				temp_file.write(s.encode('utf-8'))
 
-			zf.writestr("xl/worksheets/sheet%s.xml" % (index), temp_file.getvalue().encode('utf-8'))
+			zf.writestr("xl/worksheets/sheet%s.xml" % (index), temp_file.getvalue())
 
 		zf.close()
